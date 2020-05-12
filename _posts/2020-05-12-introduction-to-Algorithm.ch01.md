@@ -1,8 +1,12 @@
 ---
+
 title: "Introduction-to-Algorithm.ch01"
-date: 2020-05-12 16:03:00
-categories: algorithm
+date: 2020-05-12
+categories: ['algorithm']
+tags: ['algorithm', 'introduction to algorithm']
+
 ---
+
 # The Role of Algorithms in Computing
 
 ## Algorithms
