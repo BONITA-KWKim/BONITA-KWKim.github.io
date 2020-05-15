@@ -13,14 +13,14 @@
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 remote_theme : mmistakes/minimal-mistakes
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
 title                    : "KW T-lab"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "김경원Kyungwon.KIM"
+name                     : "김경원 Kyungwon KIM"
 description              : "이것저것 관심 많은 개발자의 실험실"
 url                      : https://BONITA-KWKim.github.io
 baseurl                  : ""# the subpath of your site, e.g. "/blog"
@@ -146,6 +146,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - _new
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
