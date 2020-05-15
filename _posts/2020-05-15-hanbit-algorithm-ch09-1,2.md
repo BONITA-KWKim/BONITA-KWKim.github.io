@@ -91,3 +91,45 @@ class Graph:
         self.edge.pop(idx)
         return True
 ~~~
+
+* test
+~~~
+g = Graph()
+g.add_vertex(1)
+g.add_vertex(2)
+g.add_vertex(3)
+g.add_vertex(4)
+g.add_vertex(5)
+g.add_vertex(6)
+g.add_vertex(7)
+
+g.add_edge(g.create_edge(10, 0, 1)) # 1 -> 2
+g.add_edge(g.create_edge(10, 0, 2)) # 1 -> 3
+g.add_edge(g.create_edge(10, 1, 3)) # 2 -> 4
+g.add_edge(g.create_edge(10, 1, 4)) # 2 -> 5
+g.add_edge(g.create_edge(10, 2, 3)) # 3 -> 4
+g.add_edge(g.create_edge(10, 2, 5)) # 3 -> 5
+g.add_edge(g.create_edge(10, 3, 4)) # 4 -> 5
+g.add_edge(g.create_edge(10, 3, 6)) # 4 -> 7
+g.add_edge(g.create_edge(10, 4, 6)) # 4 -> 5
+g.add_edge(g.create_edge(10, 5, 6)) # 4 -> 5
+
+g.show_graph()
+
+g.del_graph()
+
+g.show_graph()
+~~~
+
+* result
+~~~
+***** Print graph *****
+0 :1[10]2[10]
+1 :3[10]4[10]
+2 :3[10]5[10]
+3 :4[10]6[10]
+4 :6[10]
+5 :6[10]
+6 :
+***** Print graph *****
+~~~
